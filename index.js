@@ -13,6 +13,11 @@ app.get('/api/Facts-About-Me', (req, res) => {
     res.send(JSON.stringify(factsAboutMe));
 });
 
+app.get('/api/Facts-About-Tokyo', (req, res) => {
+    const factsAboutTokyo = ["Tokyo is the largest city in the world", "There is one vending machine per 23 citizens", "Tokyo is one of the safest cities worldwide", "Tokyo was originally named Edo", "Tokyo Skytree is one of the world’s tallest buildings", "Shibuya Crossing is the world’s busiest intersection", "You can see Mount Fuji from Tokyo on a clear day", "You can go real-life Mario karting in Tokyo", "The Park Hyatt Tokyo is widely recognized for its role in the Academy Award-winning drama Lost in Translation", "Tokyo has the highest number of neon signs in the world"];
+    res.send(JSON.stringify(factsAboutTokyo));
+});
+
 app.listen(port, () => {
     console.log("Listening on port", port);
 });
